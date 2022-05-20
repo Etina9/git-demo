@@ -1,0 +1,144 @@
+/* 声明字体图标 这里一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+/* 版心公共类 */
+.w{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+section{
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+section .fl ul li{
+    float: left;
+    margin-right: 5px;
+}
+
+.ceshi{
+    height: 1000px;
+    background-color: pink;
+}
+
+section .fr ul li{
+    float: right;
+}
+
+section .fr ul :nth-child(2n){
+    height: 12px;
+    border-right: 1px solid black;
+    margin: 9px 15px 0;
+}
+
+.arrow::after{
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 6px;
+}
+
+header {
+    position: relative;
+    height: 105px;
+ 
+}
+
+.logo a {
+    position: absolute;
+    top: 25px;
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../img/logo.png) no-repeat;
+    font-size: 0;
+}
+
+.search {
+    position: relative;
+}
+
+.search .up{
+    position: absolute;
+    top: 25px;
+    left: 350px;
+    height: 32px;
+    width: 534px;
+}
+
+.search input{
+    border: #c81623 solid 2px;
+    height: 32px;
+    width: 454px;
+}
+.search button{
+    height: 32px;
+    width: 80px;
+    background-color: #c81623;
+    color: white;
+    font-size: 16px;
+}
+
+.search .down{
+    position: absolute;
+    top:60px;
+    left: 350px;
+}
+
+.search .down li{
+    float: left;
+    margin: 0 10px;
+}
+
+.cart{
+    position: absolute;
+    right:50px;
+    top: 25px;
+    height: 35px;
+    width: 140px;
+
+}
+
+.cart button {
+    height: 35px;
+    width: 140px;
+    background-color: #f1f1f1;
+    border: solid lightgray 1px;
+    color: #666;
+    font-size:12px;
+    font-family: 'icomoon';
+}
+
+.cart .count {
+    position: absolute;
+    top: -5px;
+    left:120px;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 5px;
+    background-color: red;
+    color:white;
+    border-radius: 50% 50% 50% 0;
+}

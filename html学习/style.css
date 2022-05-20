@@ -1,0 +1,327 @@
+/* 首先清除内外边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+  .clearfix {
+     *zoom:1;
+  }   
+
+body{
+    background: #f3f5f7;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* 版心类 */
+.w{
+    width: 1200px;
+    margin: auto;
+}
+
+.head{
+    height: 42px;
+    margin: 30px auto;
+}
+
+.logo{
+    width: 198px;
+    height: 42px;
+    float: left;
+}
+
+.nav{
+    margin-left: 60px;
+    float: left;
+}
+
+.nav li{
+    float: left;
+    margin: 0 15px;
+    font-size: 18px;
+    line-height: 42px;
+
+}
+
+.nav a{
+    display: block;
+    height: 42px; 
+    /* 转为块才可以设置高度 */ 
+    padding: 0 10px;
+    color: black;
+}
+
+.nav a:hover{
+    color: skyblue;
+    border-bottom: 2px solid skyblue;
+}
+
+.search{
+    float: left;
+    margin-left: 70px;
+    width: 412px;
+}
+
+.search input{
+    font-size: 14px;
+    border: 1px solid skyblue;
+    border-right: none;
+    height: 40px;
+    float: left;
+    width: 345px;
+    padding-left: 15px ;
+    color: grey;
+}
+
+.search button{
+    float: left;
+    background-image: url(15/btn.png);
+    width: 50px;
+    height: 42px;
+    border: none;
+}
+
+.user{
+    float:right;
+    margin-right: 30px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 42px;
+    
+}
+
+.user img{
+    vertical-align: middle;
+}
+
+.bj{
+    background: darkblue;
+    height: 421px;
+}
+
+.bj .w{
+    height: 421px;
+    background: url(15/banner2_20190819_210028.png) no-repeat top center;
+}
+
+.bj .sub{
+    float: left;
+    width: 190px;
+    height: 421px;
+    background: rgba(0,0,0,0.3);
+}
+
+.bj .course{
+    margin-top: 50px;
+    float: right;
+    width: 230px;
+    height: 300px;
+    background: white;
+}
+
+.sub li{
+    padding: 0 20px;
+    font-size: 14px;
+    height: 45px;
+    line-height: 45px;
+}
+.sub a{
+    color:white;
+}
+
+.sub span{
+    float: right;
+}
+
+.sub a:hover{
+    color: skyblue;
+}
+
+.course ul{
+    padding: 0 20px;
+}
+
+.course h2{
+    height: 48px;
+    line-height: 48px;
+    background: skyblue;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.course li{
+    padding: 14px 0;
+    border-bottom: 1px solid gray;
+}
+
+.course h3{
+    font-size: 16px;
+    color: black;
+}
+
+.course p{
+    font-size: 12px;
+    color: gray;
+}
+
+.course button{
+    height: 38px;
+    width: 188px;
+    margin-top: 5px;
+    color: skyblue;
+    border: 1px solid skyblue;
+    font-size: 16px;
+    font-weight: 700;
+    background: white;
+}
+
+.rec{
+    height: 60px;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 2px 3px 3px rgba(0,0,0,0.2);
+}
+
+.rec h3{
+    line-height: 60px;
+    float: left;
+    margin: 0 30px;
+    font-size: 16px;
+}
+
+.rec li{
+    float: left;
+}
+
+.rec li a{
+    padding: 0 30px;
+    border-left: 1px solid gray;
+}
+
+.rec span{
+    float: right;
+    margin-right: 30px;
+}
+
+.rec a{
+    line-height: 60px;
+}
+
+.goods{
+    margin-top: 30px;
+}
+
+.goods .goodshead{
+    height: 45px;
+}
+
+.goods .goodshead h3{
+    font-size: 20px;
+    float: left;
+}
+
+.goods .goodshead span{
+    float: right;
+    padding-right: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.goods .goodshead a{
+    color: gray;
+}
+
+.goods .goodsbody li{
+    height: 270px;
+    width: 228px;
+    background: white;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.goods .goodsbody ul li:nth-child(5n+0){
+    margin: 0 0 15px 0;
+}
+
+.goods .goodsbody img{
+    width: 100%;
+}
+
+.goods h4{
+    margin: 20px 20px 20px 25px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.senior {
+    margin-left: 25px;
+    font-size: 12px;
+    color: gray;
+}
+
+.goods .goodsbody ul li span{
+    color: orange;
+}
+
+.footer{
+    width: 100;
+    height: 415px;
+    background: white;
+}
+
+.footer .w{
+    padding: 35px 0;
+}
+
+.footer .w p{
+    margin: 20px 0 15px 0;
+    font-size: 12px;
+    color: darkgray;
+}
+
+.copyright{
+    float: left;
+}
+
+.footer button{
+    height: 35px;
+    width: 120px;
+    color: skyblue;
+    border: 1px solid skyblue;
+    font-size: 16px;
+    font-weight: 700;
+    background: white;
+}
+
+.footer .links{
+    float: right;
+}
+
+dl{
+    margin-left: 100px;
+    float: left;
+    font-size: 16px;
+}
+
+dt{
+    margin-bottom: 5px;
+}
+
+dd a{
+    font-size: 12px;
+    color: black;
+}
